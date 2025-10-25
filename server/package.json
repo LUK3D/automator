@@ -1,0 +1,26 @@
+{
+  "name": "emulator_server",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.9.1",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2",
+    "ts-proto": "^2.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0",
+    "cheerio": "^1.1.2",
+    "elysia": "^1.4.12",
+    "ws": "^8.18.3"
+  },
+  "scripts": {
+    "dev": "bun run --watch ./src/index.ts"
+  }
+}
